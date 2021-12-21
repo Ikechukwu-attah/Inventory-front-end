@@ -1,0 +1,59 @@
+.invoice {
+    &__wrapper {
+        // padding-top: 5rem;
+        width: 87%;
+        background-color: $color-primary-1;
+        height: max-content;
+        margin: auto;
+        display: flex;
+        margin-top: 6rem !important;
+        border-radius: 20px;
+        &--left {
+            flex: 0 0 60%;
+            // background-color: aqua;
+            height: 100%;
+        }
+        &--right {
+            // background-color: darkgoldenrod;
+            flex: 0 0 40%;
+        }
+    }
+    &__image {
+        // background-color: brown; 
+        width: 100%;
+        display: flex;
+        position: relative;
+        &--img {
+            position: absolute;
+            // z-index: 100;
+            left: 35%;
+            transform: translateX(-50%);
+        }
+    }
+    &__text {
+        &--heading {
+            margin-top: 12rem;
+            margin-left: 1.5rem;
+        }
+        &--header {
+            color: $color-secondary-text;
+            font-size: 6.5rem;
+            line-height: 8rem;
+            font-family: Gilmer;
+            font-style: normal;
+            font-weight: bold;
+        }
+        &--span {
+            color: $color-tertiary-text;
+        }
+        &--details {
+            font-size: 1.5rem;
+            color: $color-secondary-text;
+            line-height: 3rem;
+            margin-top: 2rem;
+            font-family: Gilmer;
+            font-style: normal;
+            font-weight: normal;
+        }
+    }
+}

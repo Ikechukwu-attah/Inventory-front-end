@@ -1,0 +1,127 @@
+.mainFooter {
+    width: 100%;
+    height: max-content;
+    background-color: $color-columns-text;
+    // margin-top: 1rem;
+    &__wrapper {
+        width: 90%;
+        height: 35vh;
+        margin: auto;
+        padding-top: 5rem !important;
+        display: grid;
+        grid-gap: 2rem;
+        justify-content: space-between;
+        // align-items: center;
+        grid-template-rows: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__left {
+        margin-left: 0.001rem;
+        &--text {
+            color: $color-footer-1;
+            font-family: Gilmer;
+            font-weight: 400;
+            font-size: 1.6rem;
+            font-style: normal;
+            line-height: 4rem;
+        }
+    }
+    &__center {
+        &--content {
+            position: relative;
+        }
+        &--heading {
+            color: $color-footer-1;
+            font-family: Gilmer;
+            font-weight: 700;
+            font-size: 1.2rem;
+            font-style: normal;
+            line-height: 2rem;
+            padding-left: 1rem;
+        }
+        &--paragraph {
+            margin-top: 4rem;
+        }
+        &--text {
+            color: $color-footer-1;
+            font-family: Gilmer;
+            font-weight: 400;
+            font-size: 1.2rem;
+            font-style: normal;
+            line-height: 2rem;
+        }
+        &--subscribe {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        // &--subInput {
+        //     margin-top: 1rem;
+        // }
+        input {
+            margin-right: -3.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1.5px #DCE3E7 solid;
+            background-color: $color-white;
+            width: 70%;
+        }
+        input::placeholder {
+            font-family: Gilmer;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            color: $color-placeholder;
+            padding-left: 2rem;
+        }
+        button {
+            border: none;
+            outline: none;
+            background-color: $color-white;
+            cursor: pointer;
+        }
+    }
+    &__right {
+        margin-top: 0.01rem;
+    }
+    &__social {
+        display: flex;
+        width: 50%;
+        margin-top: 3rem;
+        justify-content: space-around;
+        &--roundShape {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: rgba(203, 203, 203, 0.23);
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+        }
+        &--linkedln {
+            position: absolute;
+            // left: 1.9rem;
+            // top: 1.2rem;
+        }
+        &--twitter {
+            position: absolute;
+            // left: 8rem;
+            // top: 1.2rem;
+        }
+        &--facebook {
+            position: absolute;
+            // left: 14rem;
+            // top: 1.2rem;
+        }
+        &--instagram {
+            position: absolute;
+            // left: 19.5rem;
+            // top: 1.2rem;
+        }
+        &--linkedlnbg {
+            background-color: rgba(0, 119, 255, 0.1) !important;
+        }
+    }
+}
