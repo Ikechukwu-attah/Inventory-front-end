@@ -3,14 +3,28 @@
     background-color: $color-primary-1;
     border-bottom: 1px solid $color-primary-1;
     position: absolute;
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2.5rem 0 2.5rem 10rem;
-        &--logo {
-            height: 4rem;
-            width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0 2.5rem 10rem;
+    &__logo {
+        height: 4rem;
+        width: 10rem;
+    }
+    &__btn {
+        width: 10rem;
+        height: 3.2rem;
+        // padding: 1rem;
+        border-radius: 0.7rem;
+        cursor: pointer;
+        border: 1px solid #a3a2a2;
+        font-size: 1rem;
+        background: none;
+        @include respond(tab-port) {
+            margin-right: 3rem;
         }
+        // &--black{
+        //     background-color:black;
+        // }
     }
 }

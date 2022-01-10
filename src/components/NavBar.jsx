@@ -1,14 +1,13 @@
-import React from 'react'
-import logo from '../Images/logo.svg'
+import React from "react";
+import logo from "../Images/Svg/logo.svg";
 
 export default function NavBar() {
-    return (
-        <div className="navbar">
-            <div className="navbar__wrapper">
-                <img src= {logo} alt="logo" className="navbar__wrapper--logo" />
-                <button className="navbar__wrapper--btn btn">Help Center</button>
-            </div>
-            
-        </div>
-    )
+  return (
+    <div className="navbar">
+      <img src={logo} alt="logo" className="navbar__logo" />
+      <button className="navbar__btn navbar__btn ">Help Center</button>
+      
+    
+    </div>
+  );
 }

@@ -1,91 +1,53 @@
 .header {
     width: 100%;
-    // height: max-content;
     position: relative;
     background-color: $color-primary-1;
-    &__wrapper {
-        // margin-left: 9rem;
-        // margin-right: 9rem;
-        // background-color: white;
+    display: flex;
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+    &__text {
+        flex: 0 0 50%;
         display: flex;
-        &--text {
-            flex: 0 0 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 10rem;
-        }
-        &--heading {
-            color: $color-secondary-text;
-            font-size: 6.5rem;
-            line-height: 8rem;
-            font-family: Gilmer;
-            font-style: normal;
-            font-weight: 600;
-            width: 100%
-        }
-        &--span {
-            color: $color-tertiary-text;
-        }
-        &--details {
-            font-size: 1.5rem;
-            // background-color: pink;
-            color: $color-secondary-text;
-            line-height: 3rem;
-            width: 80%;
-            margin-top: 2rem;
-            font-family: Gilmer;
-            font-style: normal;
-            font-weight: normal;
-        }
-        &--downloadNowText {
-            margin-top: 2rem;
-            color: $color-secondary-text;
-            font-family: Gilmer;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 2.4rem;
-        }
-        &--downloadbtn {
-            display: flex;
-            margin-top: 2rem;
-        }
-        &--googlePlay {
-            background-color: $color-secondary-1;
-            height: 4.8rem;
-            border-radius: .8rem;
-            width: 13rem;
-            cursor: pointer;
-        }
-        &--googleWrapper {
-            display: flex;
-            align-items: center;
-            margin-left: 2rem;
-        }
-        &--container {
-            display: flex;
-            flex-direction: column;
-            margin-left: 0.9rem;
-            margin-top: 0.5rem;
-            color: $color-white;
-            text-align: left;
-        }
-        &--iconGoogle {
-            margin-top: 1rem;
-        }
-        &--spanGoogle {
-            color: #F9FAFC;
-            font-size: .6rem;
-            margin-top: .2rem;
-            text-transform: uppercase;
-        }
-        &--btnGoogle {
-            background-color: Transparent;
-            background-repeat: no-repeat;
-            border: none;
-            color: #F9FAFC;
-            font-size: 1rem;
-        }
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10rem;
+    }
+    &__heading {
+        color: $color-secondary-text;
+        font-size: clamp(3rem, 5vw, 6rem)!important;
+        line-height: clamp(4rem, 5vw, 8rem);
+        font-family: Gilmer;
+        font-style: normal;
+        padding-top: 10rem;
+        font-weight: 600;
+        width: 100%
+    }
+    &__span {
+        color: $color-tertiary-text;
+    }
+    &__details {
+        font-size: 1.5rem;
+        // background-color: pink;
+        color: $color-secondary-text;
+        line-height: 3rem;
+        width: 80%;
+        margin-top: 2rem;
+        font-family: Gilmer;
+        font-style: normal;
+        font-weight: normal;
+    }
+    &__downloadNowText {
+        margin-top: 2rem;
+        color: $color-secondary-text;
+        font-family: Gilmer;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.4rem;
+    }
+    &__buttons {
+        display: flex;
+        margin-top: 2rem;
     }
     &__moveRight {
         margin-left: 2rem !important;
@@ -94,24 +56,19 @@
         // margin-top: 4rem;
         display: flex;
         position: relative;
+        @include respond(tab-port) {
+            padding-top: 4rem;
+        }
     }
     &__img1 {
         z-index: 100;
         position: absolute;
         bottom: 0;
+        width: 70%;
         left: 50%;
         transform: translateX(-50%);
-        // transform: scale(0.7);
     }
-    // &__img2 {
-    //     // width: min-content;
-    //     height: 500px;
-    // }
-    &__img3 {
-        position: absolute;
-        // width: min-content;
-        height: 300px;
-        left: 26rem;
-        top: 18rem;
+    &__vshape {
+        width: 100% !important;
     }
 }

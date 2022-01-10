@@ -1,0 +1,26 @@
+.download-button {
+    display: flex;
+    padding: 1.2rem 2.2rem;
+    background-color: $color-secondary-1;
+    color: white;
+    border-radius: 1rem;
+    align-items: center;
+    text-align: left;
+    border: none;
+    @include respond(tab-port) {
+        padding: 1rem;
+    }
+    &>div {
+        margin-left: 0.5rem;
+        p {
+            font-size: 0.8rem;
+        }
+        h5 {
+            font-weight: 400;
+        }
+    }
+    &--white {
+        background-color: #fff;
+        color: #017bfe;
+    }
+}
